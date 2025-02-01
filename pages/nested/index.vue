@@ -3,7 +3,7 @@
     <div>
       <logo />
       <h1 class="title">
-        NESTED
+        {{title}}
       </h1>
       <h2 class="subtitle">
         My cat&#39;s meow Nuxt.js project
@@ -38,7 +38,9 @@ export default {
     console.log('Server-side log:', context.req.query);
 
     // Return data to the component
-    return {};
+    return {
+      title: "FROM SERVERSIDE"
+    };
   },
   components: {
     Logo
