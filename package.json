@@ -1,0 +1,23 @@
+{
+  "name": "nuxt-poc",
+  "version": "1.0.0",
+  "description": "My cat&#39;s meow Nuxt.js project",
+  "author": "Jimmy Richard Timotius Dumalang",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
+    "build": "nuxt build",
+    "start": "cross-env NODE_ENV=production node server/index.js",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "chokidar": "^4.0.3",
+    "cross-env": "^5.2.0",
+    "express": "^4.16.4",
+    "fsevents": "^2.3.3",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
