@@ -5,6 +5,9 @@
 <script>
 
 export default {
+  validate (data) {
+    return !isNaN(data.params.id)
+  },
   async asyncData(context) {
     // Server-side console log
     console.log('Server-side log:', context.params.id);
