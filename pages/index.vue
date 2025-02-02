@@ -9,6 +9,10 @@
         My cat&#39;s meow Nuxt.js project
       </h2>
       <div class="links">
+        <input class="" type="text" v-model="userId"/>
+        <button @click="onClickBtnUsers" class="button--green">LOAD USER</button>
+      </div>
+      <div class="links">
         <a
           href="/users/1000"
           target="_blank"
@@ -42,6 +46,17 @@
 import Logo from '~/components/Logo.vue'
 
 export default {
+  data() {
+    return {
+      userId: 'defaultUserID'
+    }
+  },
+  methods: {
+    onClickBtnUsers() {
+      alert('Users: ' + this.userId)
+      this.$router.push(`/users/${this.userId}`)
+    }
+  },
   components: {
     Logo
   }
