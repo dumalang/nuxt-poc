@@ -10,6 +10,15 @@
       </h2>
       <div class="links">
         <a
+          href="/users/1000"
+          target="_blank"
+          class="button--green"
+        >
+          Go To User with ID 100
+        </a>
+      </div>
+      <div class="links">
+        <a
           href="https://nuxtjs.org/"
           target="_blank"
           class="button--green"
