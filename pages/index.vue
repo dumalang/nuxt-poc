@@ -16,6 +16,7 @@
         >
           Go To User with ID 100
         </a>
+        <nuxt-link to="/about-us" class="button--green">Go To About Us</nuxt-link>
       </div>
       <div class="links">
         <a
